@@ -807,9 +807,6 @@ window.addEventListener("load", function () {
         textoMensagem += "\n";
         textoMensagem += `💳 *Pagamento:* ${pagamento}\n`;
 
-        if (pagamento === "Pix") {
-            textoMensagem += "\n🔑 Favor enviar a chave Pix para pagamento.\n";
-        }
 
         const numeroAtendimento = "5566996564976";
         const url = `https://wa.me/${numeroAtendimento}?text=${encodeURIComponent(textoMensagem)}`;
