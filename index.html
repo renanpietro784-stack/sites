@@ -85,6 +85,7 @@ body.has-floating-bar { padding-bottom: 78px; }
     height: 100%;
     object-fit: cover;
     display: block;
+    background-color: #fff;
 }
 
 /* Grid de produtos adaptado para ocupar o resto do espaço */
@@ -218,7 +219,8 @@ body.has-floating-bar { padding-bottom: 78px; }
 /* Tablets */
 @media (max-width: 900px) {
     .section-row { flex-direction: column; }
-    .section-banner { flex: none; width: 100%; height: 200px; }
+    .section-banner { flex: none; width: 100%; height: auto; aspect-ratio: 16 / 9; }
+    .section-banner img { object-fit: contain; }
 }
 
 /* Celulares grandes */
@@ -234,7 +236,7 @@ body.has-floating-bar { padding-bottom: 78px; }
     .product-card { padding: 14px; }
     .product-card h3 { font-size: 1rem; }
     .product-card .price { font-size: 1.15rem; }
-    .section-banner { height: 150px; }
+    .section-banner { aspect-ratio: 4 / 3; }
 
     .cart-section { padding: 18px; margin: 25px 0; }
     .cart-actions { flex-direction: column; }
@@ -256,7 +258,7 @@ body.has-floating-bar { padding-bottom: 78px; }
     .products-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
     .product-card { padding: 12px; }
     .product-card .details { font-size: 0.78rem; }
-    .section-banner { height: 110px; }
+    .section-banner { aspect-ratio: 3 / 2; }
     .modal-footer { flex-wrap: wrap; }
     .modal-total-preview { font-size: 0.9rem; }
     .btn-confirm-add { flex: 1; }
@@ -266,7 +268,7 @@ body.has-floating-bar { padding-bottom: 78px; }
 /* Celulares muito pequenos */
 @media (max-width: 360px) {
     .products-grid { grid-template-columns: 1fr; }
-    .section-banner { height: 90px; }
+    .section-banner { aspect-ratio: 3 / 2; }
 }
 </style>
 
